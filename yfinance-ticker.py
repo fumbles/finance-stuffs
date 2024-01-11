@@ -27,7 +27,7 @@ for ticker in tickers.tickers:
     # Print title
     print(f"===== {ticker} Historical Data =====")
     
-    # Convert Timestamps to strings in the historical_data dictionary
+    # Convert Timestamps to strings in the historical_data dictionary since sh*t kept breaking /eyeroll
     historical_data = tickers.tickers[ticker].history(period='1mo')
     historical_data_str = historical_data.reset_index().to_dict(orient='list')
     
