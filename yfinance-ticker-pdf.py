@@ -4,6 +4,8 @@ import pandas as pd
 from tabulate import tabulate
 from fpdf import FPDF
 
+
+# this pulls in data from a supplied single(or list) of stock symbols and then forms a PDF with that data of each ticker
 def create_pdf(content, filename):
     pdf = FPDF()
     pdf.add_page()
